@@ -25,6 +25,7 @@ function Metronome() {
     setAccentedBeats(updatedAccentedBeats);
   };
 
+  // I'm afraid this function is causing a lot of unnecessary re-renders
   const handleButtonPress = () => {
     // if isPlaying is false, then when the button is pressed, the user is trying to start the metronome
     // set the beat array to pass into the Player component
